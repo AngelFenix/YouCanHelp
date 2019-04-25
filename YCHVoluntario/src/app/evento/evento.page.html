@@ -1,0 +1,122 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>
+      Dia de la Cero Discriminacion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-row class="titulo">
+        <ion-col align="center">
+          <h3>TOLERANCIA</h3>
+        </ion-col>
+      </ion-row>
+    <img src="../../assets/imgs/tolerancia potter.png" width="100%">
+  <div class="ion-padding">
+
+
+    <ion-row class="ion-align-items-center">
+      <ion-col size="10">
+        <ion-item>
+          <ion-label text-wrap><b>Nombe del Evento:</b> Día de la Cero Discriminación</ion-label>
+          <ion-button icon-only primary round outline (click)="liked()">
+            <div *ngIf="status;else n">
+              <ion-icon name='heart'>
+              </ion-icon>
+            </div>
+            <ng-template #n>
+              <ion-icon name='heart-empty'></ion-icon>
+            </ng-template>
+            <ion-label>{{c}}</ion-label>
+          </ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-item-divider></ion-item-divider>
+
+    <ion-row class="ion-align-items-center">
+      <ion-col size="8">
+        <ion-item>
+          <ion-label text-wrap><b>Ubicacion:</b> Calle sal si puedes #5</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button (click)="presentModal() ">
+          <ion-icon name="map"></ion-icon> Mapa
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-item-divider></ion-item-divider>
+
+    <ion-row>
+      <ion-col class="ion-text-justify">
+        <ion-label>En el Día de la Cero Discriminación, el 1 de marzo, celebramos el derecho de todas las personas a
+          tener una vida plena y productiva y, a su vez, el derecho a vivirla con dignidad. En este día se quiere
+          enfatizar cómo informarse y fomentar la tolerancia, la compasión, la paz y, sobre todo, un movimiento por el
+          cambio. El Día de la Cero Discriminación contribuye a crear un movimiento global de solidaridad con el fin de
+          acabar con cualquier forma de discriminación. Algunos de los derechos que se pueden alegar para recurrir las
+          leyes discriminatorias son:
+          <ul>
+            <li>El derecho a un trato igualitario ante la ley</li>
+            <li> El derecho a la educación</li>
+            <li>El derecho a oportunidades económicas</li>
+            <li>El derecho a la privacidad.</li>
+            <li>El derecho a la dignidad.</li>
+            <li>El derecho a la sanidad.</li>
+            <li> El derecho de asociación.</li>
+            <li> El derecho a un juicio justo.</li>
+          </ul>
+          Todo el mundo es responsable de que
+          los Estados asuman su deber, así como de promover el cambio y contribuir a eliminar las leyes
+          discriminatorias. Los primeros pasos para lograr el cambio son: conocer la ley, identificar las leyes que
+          pueden ser discriminatorias y hacer visible dichas leyes.
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-item-divider></ion-item-divider>
+    <ion-item align="center"><b>Patrocinador</b></ion-item>
+    <ion-row>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/imgs/sponsor.jpg">
+      </ion-col>
+    </ion-row>
+    <ion-item-divider></ion-item-divider>
+
+    <ion-list-header align="center">
+      <h3>Recompensas</h3>
+    </ion-list-header>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="flash"></ion-icon>
+        45 Puntos de Heroe
+      </ion-item>
+      <ion-item>
+        <ion-icon name="flash"></ion-icon>
+        200 MXN
+      </ion-item>
+      <ion-item>
+        <ion-icon name="flash"></ion-icon>
+        Cupon 2x1 Avengers Infinity War
+      </ion-item>
+    </ion-list>
+    <ion-item-divider></ion-item-divider>
+
+    <ion-row>
+      <ion-col size="12" align="center">
+        <ion-button full big primary (click)="presentAlert()"> 1 DE MARZO INSCRIBETE</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col size="12" align="center">
+            <ion-button full big primary>Compartir en FB</ion-button>
+
+        </ion-col>
+      </ion-row>
+    <br>
+  </div>
+</ion-content>

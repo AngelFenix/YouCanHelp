@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+          <img src="/assets/imgs/YouCanHelp.png" class="center">
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+  <ion-grid>
+      <ion-row >
+          <ion-col size="12">
+            
+            <b class="titulo">Escoge donde quieres ser un héroe</b>
+            
+          </ion-col>
+        </ion-row>  
+    <ion-row>
+      <ion-col size="6">
+        
+        <img  src="{{proteccion}}" (click)="cambiarProteccion()">
+           
+      </ion-col>
+      <ion-col size="6">
+        <img  src="{{ambiente}}" (click)="cambiarAmbiente()">
+      </ion-col>
+      <ion-col size="6">
+        <img src="{{equidad}}" (click)="cambiarEquidad()">
+      </ion-col>
+      <ion-col size="6">
+        <img src="{{tolerancia}}" (click)="cambiarTolerancia()"> 
+      </ion-col>
+      <ion-col size="6">
+        <img src="{{bienestar}}" (click)="cambiarBienestar()"> 
+      </ion-col>
+      <ion-col size="6">
+        <img src="{{salud}}" (click)="cambiarSalud()"> 
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col size="12">
+          <ion-button (click)="presentAlert()" shape="round" size="large" expand="full" color="success">Hecho <ion-icon slot="end" name="star"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>    
+  </ion-grid>
+</ion-content>

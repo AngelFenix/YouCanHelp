@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        <img src="/assets/imgs/YouCanHelp.png" class="center">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+
+  <ion-slides pager="true" [options]="sliderOpts" #slider>
+    <ion-slide>
+        <img src="/assets/imgs/slide.png">
+    </ion-slide>
+    <ion-slide>
+        <img src="/assets/imgs/slided.png">
+    </ion-slide>
+    <ion-slide>
+        <img src="/assets/imgs/everyday.jpeg">
+    </ion-slide>
+  </ion-slides>
+
+    <ion-grid>
+
+      <ion-row>
+        <ion-col size="6">
+            <img src="/assets/imgs/bienestar.png" alt="">   
+        </ion-col>
+        <ion-col size="6">
+             <img src="/assets/imgs/equidad.png" alt="">
+        </ion-col>
+        <ion-col size="6">
+              <img src="/assets/imgs/ambiente.png" alt="">
+        </ion-col>
+        <ion-col size="6">
+            <img src="/assets/imgs/animales.png" alt="">
+        </ion-col>
+        <ion-col size="6">
+            <img src="/assets/imgs/tolerancia.png" (click)="go()" alt="">
+        </ion-col>
+        <ion-col size="6">
+            <img src="/assets/imgs/salud.png" alt="">
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6">
+            
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+</ion-content>
